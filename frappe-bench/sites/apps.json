@@ -1,0 +1,61 @@
+{
+    "frappe": {
+        "resolution": {
+            "commit_hash": null,
+            "branch": null
+        },
+        "required": [],
+        "idx": 1,
+        "version": "14.78.0"
+    },
+    "payments": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "f84edf918e52d07c1f612e6f8bbf6aafba1abd47",
+            "branch": "develop"
+        },
+        "required": [],
+        "idx": 2,
+        "version": "0.0.1"
+    },
+    "erpnext": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "12a31de25a22459999ccf150f65a25fdae569a38",
+            "branch": "version-14"
+        },
+        "required": [],
+        "idx": 3,
+        "version": "14.70.11"
+    },
+    "hrms": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "f2abc21b4dc758bbbccabbe2f14418440fa71b4e",
+            "branch": "version-14"
+        },
+        "required": [],
+        "idx": 4,
+        "version": "14.29.0"
+    },
+    "paie": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "2ba8f2f2c0f6e41fdde1dbae455fb0e3194eb301",
+            "branch": "main"
+        },
+        "required": [],
+        "idx": 5,
+        "version": "0.0.1"
+    },
+    "fleuve_congo_custom": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "ecbd4e8e902643d2279513204b9289e13989eccf",
+            "branch": "main"
+        },
+        "required": [],
+        "idx": 6,
+        "version": "0.0.1"
+    }
+}

@@ -1,0 +1,81 @@
+2024-09-10 07:43:02,731 ERROR frappe New Exception collected with id: 2024-09-10 07:43:02.708770-127.0.0.1-49d
+Site: erp.fleuvecongohotel.com
+Form Dict: {'employee_field_value': '07227', 'timestamp': '2024-09-10 07:14:22', 'device_id': 'receiving_entrance_out', 'log_type': 'OUT', 'cmd': 'hrms.hr.doctype.employee_checkin.employee_checkin.add_log_based_on_employee_field'}
+2024-09-10 10:05:42,898 ERROR frappe New Exception collected with id: 2024-09-10 10:05:42.881875-127.0.0.1-23c
+Site: erp.fleuvecongohotel.com
+Form Dict: {'employee_field_value': '07227', 'timestamp': '2024-09-10 07:14:22', 'device_id': 'receiving_entrance_out', 'log_type': 'OUT', 'cmd': 'hrms.hr.doctype.employee_checkin.employee_checkin.add_log_based_on_employee_field'}
+2024-09-10 11:37:22,479 ERROR frappe New Exception collected with id: 2024-09-10 11:37:22.463066-127.0.0.1-a03
+Site: erp.fleuvecongohotel.com
+Form Dict: {'employee_field_value': '07227', 'timestamp': '2024-09-10 07:14:22', 'device_id': 'receiving_entrance_out', 'log_type': 'OUT', 'cmd': 'hrms.hr.doctype.employee_checkin.employee_checkin.add_log_based_on_employee_field'}
+2024-09-10 14:51:06,681 ERROR frappe New Exception collected with id: 2024-09-10 14:51:06.665586-127.0.0.1-9d0
+Site: erp.fleuvecongohotel.com
+Form Dict: {'employee_field_value': '07227', 'timestamp': '2024-09-10 07:14:22', 'device_id': 'receiving_entrance_out', 'log_type': 'OUT', 'cmd': 'hrms.hr.doctype.employee_checkin.employee_checkin.add_log_based_on_employee_field'}
+2024-09-10 17:12:30,431 ERROR frappe New Exception collected with id: 2024-09-10 17:12:30.415582-127.0.0.1-844
+Site: erp.fleuvecongohotel.com
+Form Dict: {'employee_field_value': '07227', 'timestamp': '2024-09-10 07:14:22', 'device_id': 'receiving_entrance_out', 'log_type': 'OUT', 'cmd': 'hrms.hr.doctype.employee_checkin.employee_checkin.add_log_based_on_employee_field'}
+2024-09-10 17:22:36,913 ERROR frappe New Exception collected with id: 2024-09-10 17:22:36.896910-127.0.0.1-e88
+Site: erp.fleuvecongohotel.com
+Form Dict: {'employee_field_value': '07227', 'timestamp': '2024-09-10 07:14:22', 'device_id': 'receiving_entrance_out', 'log_type': 'OUT', 'cmd': 'hrms.hr.doctype.employee_checkin.employee_checkin.add_log_based_on_employee_field'}
+2024-09-10 21:15:08,938 ERROR frappe New Exception collected with id: 2024-09-10 21:15:08.922912-127.0.0.1-5c6
+Site: erp.fleuvecongohotel.com
+Form Dict: {'employee_field_value': '07227', 'timestamp': '2024-09-10 07:14:22', 'device_id': 'receiving_entrance_out', 'log_type': 'OUT', 'cmd': 'hrms.hr.doctype.employee_checkin.employee_checkin.add_log_based_on_employee_field'}
+2024-09-10 21:45:28,999 ERROR frappe New Exception collected with id: 2024-09-10 21:45:28.978157-127.0.0.1-66d
+Site: erp.fleuvecongohotel.com
+Form Dict: {'employee_field_value': '07227', 'timestamp': '2024-09-10 07:14:22', 'device_id': 'receiving_entrance_out', 'log_type': 'OUT', 'cmd': 'hrms.hr.doctype.employee_checkin.employee_checkin.add_log_based_on_employee_field'}
+2024-09-11 00:37:05,576 ERROR frappe New Exception collected with id: 2024-09-11 00:37:05.560277-127.0.0.1-b62
+Site: erp.fleuvecongohotel.com
+Form Dict: {'employee_field_value': '07227', 'timestamp': '2024-09-10 07:14:22', 'device_id': 'receiving_entrance_out', 'log_type': 'OUT', 'cmd': 'hrms.hr.doctype.employee_checkin.employee_checkin.add_log_based_on_employee_field'}
+2024-09-11 02:07:53,742 ERROR frappe New Exception collected with id: 2024-09-11 02:07:53.726894-127.0.0.1-f7f
+Site: erp.fleuvecongohotel.com
+Form Dict: {'employee_field_value': '07227', 'timestamp': '2024-09-10 07:14:22', 'device_id': 'receiving_entrance_out', 'log_type': 'OUT', 'cmd': 'hrms.hr.doctype.employee_checkin.employee_checkin.add_log_based_on_employee_field'}
+2024-09-11 03:58:51,030 ERROR frappe New Exception collected with id: 2024-09-11 03:58:51.014822-127.0.0.1-662
+Site: erp.fleuvecongohotel.com
+Form Dict: {'employee_field_value': '07227', 'timestamp': '2024-09-10 07:14:22', 'device_id': 'receiving_entrance_out', 'log_type': 'OUT', 'cmd': 'hrms.hr.doctype.employee_checkin.employee_checkin.add_log_based_on_employee_field'}
+2024-09-11 04:29:09,077 ERROR frappe New Exception collected with id: 2024-09-11 04:29:09.061137-127.0.0.1-b75
+Site: erp.fleuvecongohotel.com
+Form Dict: {'employee_field_value': '05205', 'timestamp': '2024-09-10 21:42:28', 'device_id': 'apartment_entrance_out', 'log_type': 'OUT', 'cmd': 'hrms.hr.doctype.employee_checkin.employee_checkin.add_log_based_on_employee_field'}
+2024-09-11 04:49:16,989 ERROR frappe New Exception collected with id: 2024-09-11 04:49:16.973411-127.0.0.1-095
+Site: erp.fleuvecongohotel.com
+Form Dict: {'employee_field_value': '07227', 'timestamp': '2024-09-10 07:14:22', 'device_id': 'receiving_entrance_out', 'log_type': 'OUT', 'cmd': 'hrms.hr.doctype.employee_checkin.employee_checkin.add_log_based_on_employee_field'}
+2024-09-11 06:30:15,055 ERROR frappe New Exception collected with id: 2024-09-11 06:30:15.039439-127.0.0.1-c38
+Site: erp.fleuvecongohotel.com
+Form Dict: {'employee_field_value': '07227', 'timestamp': '2024-09-10 07:14:22', 'device_id': 'receiving_entrance_out', 'log_type': 'OUT', 'cmd': 'hrms.hr.doctype.employee_checkin.employee_checkin.add_log_based_on_employee_field'}
+2024-09-11 08:21:22,242 ERROR frappe New Exception collected with id: 2024-09-11 08:21:22.226859-127.0.0.1-d35
+Site: erp.fleuvecongohotel.com
+Form Dict: {'employee_field_value': '07227', 'timestamp': '2024-09-10 07:14:22', 'device_id': 'receiving_entrance_out', 'log_type': 'OUT', 'cmd': 'hrms.hr.doctype.employee_checkin.employee_checkin.add_log_based_on_employee_field'}
+2024-09-11 09:21:57,568 ERROR frappe New Exception collected with id: 2024-09-11 09:21:57.552852-127.0.0.1-0cf
+Site: erp.fleuvecongohotel.com
+Form Dict: {'employee_field_value': '05205', 'timestamp': '2024-09-10 21:42:28', 'device_id': 'apartment_entrance_out', 'log_type': 'OUT', 'cmd': 'hrms.hr.doctype.employee_checkin.employee_checkin.add_log_based_on_employee_field'}
+2024-09-11 11:12:57,836 ERROR frappe New Exception collected with id: 2024-09-11 11:12:57.818575-127.0.0.1-291
+Site: erp.fleuvecongohotel.com
+Form Dict: {'employee_field_value': '05205', 'timestamp': '2024-09-10 21:42:28', 'device_id': 'apartment_entrance_out', 'log_type': 'OUT', 'cmd': 'hrms.hr.doctype.employee_checkin.employee_checkin.add_log_based_on_employee_field'}
+2024-09-11 15:45:21,899 ERROR frappe New Exception collected with id: 2024-09-11 15:45:21.883970-127.0.0.1-610
+Site: erp.fleuvecongohotel.com
+Form Dict: {'employee_field_value': '07227', 'timestamp': '2024-09-10 07:14:22', 'device_id': 'receiving_entrance_out', 'log_type': 'OUT', 'cmd': 'hrms.hr.doctype.employee_checkin.employee_checkin.add_log_based_on_employee_field'}
+2024-09-11 16:55:55,080 ERROR frappe New Exception collected with id: 2024-09-11 16:55:55.064055-127.0.0.1-226
+Site: erp.fleuvecongohotel.com
+Form Dict: {'employee_field_value': '07227', 'timestamp': '2024-09-10 07:14:22', 'device_id': 'receiving_entrance_out', 'log_type': 'OUT', 'cmd': 'hrms.hr.doctype.employee_checkin.employee_checkin.add_log_based_on_employee_field'}
+2024-09-12 00:29:50,679 ERROR frappe New Exception collected with id: 2024-09-12 00:29:50.658924-127.0.0.1-a89
+Site: erp.fleuvecongohotel.com
+Form Dict: {'employee_field_value': '05205', 'timestamp': '2024-09-10 21:42:28', 'device_id': 'apartment_entrance_out', 'log_type': 'OUT', 'cmd': 'hrms.hr.doctype.employee_checkin.employee_checkin.add_log_based_on_employee_field'}
+2024-09-12 05:22:15,021 ERROR frappe New Exception collected with id: 2024-09-12 05:22:15.004889-127.0.0.1-63f
+Site: erp.fleuvecongohotel.com
+Form Dict: {'employee_field_value': '05205', 'timestamp': '2024-09-10 21:42:28', 'device_id': 'apartment_entrance_out', 'log_type': 'OUT', 'cmd': 'hrms.hr.doctype.employee_checkin.employee_checkin.add_log_based_on_employee_field'}
+2024-09-12 11:49:21,145 ERROR frappe New Exception collected with id: 2024-09-12 11:49:21.128094-172.28.190.161-eea
+Site: erp.fleuvecongohotel.com
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Employee Checkin","name":"new-employee-checkin-wutzcjxami","__islocal":1,"__unsaved":1,"owner":"support@ls-rdc.com","log_type":"OUT","time":"2024-09-10 06:41:49","skip_auto_attendance":0,"employee":"07168","employee_name":"TUNGU MVUELA KEVIN","device_id":"receiving_entrance_in"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-09-12 11:50:08,774 ERROR frappe New Exception collected with id: 2024-09-12 11:50:08.762080-172.28.190.161-082
+Site: erp.fleuvecongohotel.com
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Employee Checkin","name":"new-employee-checkin-wutzcjxami","__islocal":1,"__unsaved":1,"owner":"support@ls-rdc.com","log_type":"OUT","time":"2024-09-10 06:41:49","skip_auto_attendance":0,"employee":"07168","employee_name":"TUNGU MVUELA KEVIN","device_id":"receiving_entrance_in"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-09-12 15:37:06,202 ERROR frappe New Exception collected with id: 2024-09-12 15:37:06.187228-172.28.190.161-ba9
+Site: erp.fleuvecongohotel.com
+Form Dict: {'doc': '{"name":"Initialisation Checkin","owner":"support@ls-rdc.com","modified":"2024-09-12 13:14:45.798661","modified_by":"support@ls-rdc.com","docstatus":0,"idx":"0","start_date":"2024-09-10","end_date":"2024-08-22","doctype":"Initialisation Checkin","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-09-13 01:26:16,048 ERROR frappe New Exception collected with id: 2024-09-13 01:26:16.036752-127.0.0.1-6a9
+Site: erp.fleuvecongohotel.com
+Form Dict: {'employee_field_value': '05158', 'timestamp': '2024-09-12 16:40:41', 'device_id': 'receiving_entrance_out', 'log_type': 'OUT', 'cmd': 'hrms.hr.doctype.employee_checkin.employee_checkin.add_log_based_on_employee_field'}
+2024-09-13 01:36:21,348 ERROR frappe New Exception collected with id: 2024-09-13 01:36:21.333622-127.0.0.1-12c
+Site: erp.fleuvecongohotel.com
+Form Dict: {'employee_field_value': '05158', 'timestamp': '2024-09-12 16:40:41', 'device_id': 'receiving_entrance_out', 'log_type': 'OUT', 'cmd': 'hrms.hr.doctype.employee_checkin.employee_checkin.add_log_based_on_employee_field'}
+2024-09-13 03:27:19,730 ERROR frappe New Exception collected with id: 2024-09-13 03:27:19.719480-127.0.0.1-793
+Site: erp.fleuvecongohotel.com
+Form Dict: {'employee_field_value': '05158', 'timestamp': '2024-09-12 16:40:41', 'device_id': 'receiving_entrance_out', 'log_type': 'OUT', 'cmd': 'hrms.hr.doctype.employee_checkin.employee_checkin.add_log_based_on_employee_field'}

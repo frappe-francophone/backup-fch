@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VEVENT
+DTSTART:20230922T100000Z
+DTEND:20230922T110000Z
+DTSTAMP:20230920T094541Z
+ORGANIZER;CN=danykasthemba@gmail.com:mailto:danykasthemba@gmail.com
+UID:5mak12j5okcvd9915e945o7eb3@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE
+ ;CN=danykasthemba@gmail.com;X-NUM-GUESTS=0:mailto:danykasthemba@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=ebamadernis@gmail.com;X-NUM-GUESTS=0:mailto:ebamadernis@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=tshanyserge@gmail.com;X-NUM-GUESTS=0:mailto:tshanyserge@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=denis.kasala@ls-rdc.com;X-NUM-GUESTS=0:mailto:denis.kasala@ls-rdc.c
+ om
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=patrick.ntambwe@ls-rdc.com;X-NUM-GUESTS=0:mailto:patrick.ntambwe@ls
+ -rdc.com
+X-GOOGLE-CONFERENCE:https://meet.google.com/cyv-fcwi-eim
+X-MICROSOFT-CDO-OWNERAPPTID:-1333851350
+CREATED:20230920T094539Z
+DESCRIPTION:ENTRETIENS ( Madame Justyna MC)\n\n- Mode de calcul pour une dé
+ compte final.\n\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:
+ ~:~:~:~:~:~:~:~:~:~:~::~:~::-\nParticiper via Google Meet : https://meet.go
+ ogle.com/cyv-fcwi-eim\n\nPour en savoir plus sur Meet : https://support.goo
+ gle.com/a/users/answer/9282720\n\nVeuillez ne pas modifier cette section.\n
+ -::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~::~:~::-
+LAST-MODIFIED:20230920T094539Z
+LOCATION:MICROCOM S.A.R.L
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:MICROCOM / ERPNext : Mise en place du projet - Mise en production (
+ suite)
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

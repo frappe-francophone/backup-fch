@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REPLY
+BEGIN:VEVENT
+DTSTART:20231003T113000Z
+DTEND:20231003T123000Z
+DTSTAMP:20231003T092133Z
+ORGANIZER;CN=tshanyserge@gmail.com:mailto:tshanyserge@gmail.com
+UID:7kdl9kbft1lgpi4o9je40hruni@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=danyka
+ sthemba@gmail.com;X-NUM-GUESTS=0:mailto:danykasthemba@gmail.com
+X-GOOGLE-CONFERENCE:https://meet.google.com/wpp-phgg-gio
+CREATED:20231003T083848Z
+DESCRIPTION:* Exposition de la liste définitive des agents sous ERPNEXT\n* 
+ Simulation des quelques cas de paie pour certains agents\n* Livraison et pl
+ anification du traitement de la paie du mois suivant\n\n-::~:~::~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-\nJoin 
+ with Google Meet: https://meet.google.com/wpp-phgg-gio\n\nLearn more about 
+ Meet at: https://support.google.com/a/users/answer/9282720\n\nPlease do not
+  edit this section.\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:
+ ~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20231003T092132Z
+LOCATION:MICROCOM
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Restitution de la paie reçu sous ERPNEXT
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

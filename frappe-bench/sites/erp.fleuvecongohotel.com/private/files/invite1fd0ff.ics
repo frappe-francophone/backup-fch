@@ -1,0 +1,121 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VTIMEZONE
+TZID:Asia/Kolkata
+X-LIC-LOCATION:Asia/Kolkata
+BEGIN:STANDARD
+TZOFFSETFROM:+0530
+TZOFFSETTO:+0530
+TZNAME:IST
+DTSTART:19700101T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Kolkata:20240313T143000
+DTEND;TZID=Asia/Kolkata:20240313T163000
+DTSTAMP:20240313T034529Z
+ORGANIZER;CN=Sayali Yewale:mailto:sayali@frappe.io
+UID:4uagakb6uqanqhvjv2vu9h2s1s@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE
+ ;CN=Sayali Yewale;X-NUM-GUESTS=0:mailto:sayali@frappe.io
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=Dharmesh Chitroda;X-NUM-GUESTS=0:mailto:dharmesh@frappe.io
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=adhitya@intelion.co.id;X-NUM-GUESTS=0:mailto:adhitya@intelion.co.id
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE
+ ;CN=ejas@bytsolv.com;X-NUM-GUESTS=0:mailto:ejas@bytsolv.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE
+ ;CN=gmmahajan03@gmail.com;X-NUM-GUESTS=0:mailto:gmmahajan03@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=katewilly12@gmail.com;X-NUM-GUESTS=0:mailto:katewilly12@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=murali@syvasoft.com;X-NUM-GUESTS=0:mailto:murali@syvasoft.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=nudra@intelion.co.id;X-NUM-GUESTS=0:mailto:nudra@intelion.co.id
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE
+ ;CN=patrick.ntambwe@ls-rdc.com;X-NUM-GUESTS=0:mailto:patrick.ntambwe@ls-rdc
+ .com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=pooja.thyagii@gmail.com;X-NUM-GUESTS=0:mailto:pooja.thyagii@gmail.c
+ om
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=vipul@hostingduty.com;X-NUM-GUESTS=0:mailto:vipul@hostingduty.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=yash.mange@atriina.com;X-NUM-GUESTS=0:mailto:yash.mange@atriina.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE
+ ;CN=ganesh@exacuer.com;X-NUM-GUESTS=0:mailto:ganesh@exacuer.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE
+ ;CN=pasan@highflyerglobal.com;X-NUM-GUESTS=0:mailto:pasan@highflyerglobal.c
+ om
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=bernicembayo7@gmail.com;X-NUM-GUESTS=0:mailto:bernicembayo7@gmail.c
+ om
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE
+ ;CN=danykasthemba@gmail.com;X-NUM-GUESTS=0:mailto:danykasthemba@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=ebamadernis@gmail.com;X-NUM-GUESTS=0:mailto:ebamadernis@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=Mohsin Akhtar;X-NUM-GUESTS=0:mailto:mohsin@frappe.io
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE
+ ;CN=as.balajee@pie-sol.com;X-NUM-GUESTS=0:mailto:as.balajee@pie-sol.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE
+ ;CN=firoz@oasistecsolutions.com;X-NUM-GUESTS=0:mailto:firoz@oasistecsolutio
+ ns.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE
+ ;CN=krishna.kk@pie-sol.com;X-NUM-GUESTS=0:mailto:krishna.kk@pie-sol.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=patrick@reyal.biz;X-NUM-GUESTS=0:mailto:patrick@reyal.biz
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=sadagopa.ramanujam@innovatrontechnologies.com;X-NUM-GUESTS=0:mailto
+ :sadagopa.ramanujam@innovatrontechnologies.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=sajid@oasistecsolutions.com;X-NUM-GUESTS=0:mailto:sajid@oasistecsol
+ utions.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE
+ ;CN=shweta.parashar@stcl.com;X-NUM-GUESTS=0:mailto:shweta.parashar@stcl.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=nmnzava@aakvatech.com;X-NUM-GUESTS=0:mailto:nmnzava@aakvatech.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=tushar.thakkar@technovate.in;X-NUM-GUESTS=0:mailto:tushar.thakkar@t
+ echnovate.in
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=hamzah.a@accuratesystems.com.sa;X-NUM-GUESTS=0:mailto:hamzah.a@accu
+ ratesystems.com.sa
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE
+ ;CN=sukaina.wosaibi@accuratesystems.com.sa;X-NUM-GUESTS=0:mailto:sukaina.wo
+ saibi@accuratesystems.com.sa
+X-GOOGLE-CONFERENCE:https://meet.google.com/zua-simy-tqo
+X-MICROSOFT-CDO-OWNERAPPTID:-1763521366
+CREATED:20240305T061935Z
+DESCRIPTION:<b>To ensure a smooth experience\, please follow these guidelin
+ es and take note of the joining details:</b><br><ul><li><b>Setup an ERPNext
+  Instance:</b><ul><li>You can choose one of the following options: <a href=
+ "https://erpnext.com/pricing">14-day free trial account</a> /  local setup 
+ / <a href="https://frappecloud.com/">an FC site</a>.</li><li>This step is e
+ ssential to facilitate hands-on learning during the certification program.<
+ /li></ul></li><li><b>New to ERPNext? Start with the Frappe School Course:</
+ b><ul><li>If you're a beginner or new to ERPNext\, we recommend going throu
+ gh the <a href="https://frappe.school/courses/introduction-to-erpnext">Intr
+ oduction to ERPNext course</a></li></ul></li><li><b>Training Joining Detail
+ s:</b><ul><li>Zoom Link: <a>[https://us02web.zoom.<wbr />us/j/85627238249</
+ a>]<br></li><li>Start Date and Time: 13th March (Wednesday) at 2:30 pm IST<
+ /li><li>Training Schedule: <a href="https://frappe.school/training-schedule
+ ">https://frappe.<wbr />school/training-schedule</a></li></ul></li></ul>\n\
+ n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:
+ ~:~:~::~:~::-\nJoin with Google Meet: https://meet.google.com/zua-simy-tqo\
+ nOr dial: (US) +1 402-856-0177 PIN: 304967467#\nMore phone numbers: https:/
+ /tel.meet/zua-simy-tqo?pin=6904997298035&hs=7\n\nLearn more about Meet at: 
+ https://support.google.com/a/users/answer/9282720\n\nPlease do not edit thi
+ s section.\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20240313T034524Z
+LOCATION:https://us02web.zoom.us/j/85627238249
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:ERPNext Certification : Introduction
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,63 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VTIMEZONE
+TZID:Africa/Lagos
+X-LIC-LOCATION:Africa/Lagos
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0100
+TZNAME:WAT
+DTSTART:19700101T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTART;TZID=Africa/Lagos:20231114T080000
+DTEND;TZID=Africa/Lagos:20231114T100000
+DTSTAMP:20231114T072241Z
+ORGANIZER;CN=Dernis Ebama:mailto:ebamadernis@gmail.com
+UID:1e7ffgrua8e8slh575avvdcks4@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=danykasthemba@gmail.com;X-NUM-GUESTS=0:mailto:danykasthemba@gmail.c
+ om
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE
+ ;CN=Dernis Ebama;X-NUM-GUESTS=0:mailto:ebamadernis@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=gz.pmels@ls-rdc.com;X-NUM-GUESTS=0:mailto:gz.pmels@ls-rdc.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=lbb.bumgpme@ls-rdc.com;X-NUM-GUESTS=0:mailto:lbb.bumgpme@ls-rdc.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=linabwanga@gmail.com;X-NUM-GUESTS=0:mailto:linabwanga@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=patrick.ntambwe@ls-rdc.com;X-NUM-GUESTS=0:mailto:patrick.ntambwe@ls
+ -rdc.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=serge.tshany@ls-rdc.com;X-NUM-GUESTS=0:mailto:serge.tshany@ls-rdc.c
+ om
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=tshanyserge@gmail.com;X-NUM-GUESTS=0:mailto:tshanyserge@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=compta@ls-rdc.com;X-NUM-GUESTS=0:mailto:compta@ls-rdc.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=lsrdcsupport@ls-rdc.com;X-NUM-GUESTS=0:mailto:lsrdcsupport@ls-rdc.c
+ om
+X-GOOGLE-CONFERENCE:https://meet.google.com/axc-uwsg-fmp
+X-MICROSOFT-CDO-OWNERAPPTID:810855755
+CREATED:20231114T071858Z
+DESCRIPTION:- Finition des différents test et l'état du bulletin de paie\n-
+  Finition du rapport registre\n\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:
+ ~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-\nParticiper via Google Meet :
+  https://meet.google.com/axc-uwsg-fmp\n\nPour en savoir plus sur Meet : htt
+ ps://support.google.com/a/users/answer/9282720\n\nVeuillez ne pas modifier 
+ cette section.\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20231114T072239Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Enabel / LSRDC
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

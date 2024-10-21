@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REPLY
+BEGIN:VEVENT
+DTSTART:20230922T074500Z
+DTEND:20230922T084500Z
+DTSTAMP:20230922T125222Z
+ORGANIZER;CN=tshanyserge@gmail.com:mailto:tshanyserge@gmail.com
+UID:7jaod3vfv295o8cgpqrvi9hquc@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=danyka
+ sthemba@gmail.com;X-NUM-GUESTS=0:mailto:danykasthemba@gmail.com
+X-GOOGLE-CONFERENCE:https://meet.google.com/rzc-kpin-rci
+CREATED:20230922T083634Z
+DESCRIPTION:* CHECK DES MAILS\n* ECHANGE ET ORIENTATION DES TRAITEMENTS DON
+ NEES MICROCOM PAIE\n* ECHANGE TELEPHONIQUE AVEC SOIT DIVEYSH SOIT RICHARD P
+ OUR ENABEL GESTION DES AVANCE ET LOGEMENT\n\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:
+ ~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-\nJoin with Google
+  Meet: https://meet.google.com/rzc-kpin-rci\n\nLearn more about Meet at: ht
+ tps://support.google.com/a/users/answer/9282720\n\nPlease do not edit this 
+ section.\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20230922T125222Z
+LOCATION:LSRDC
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:PLANNING JOURNE
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

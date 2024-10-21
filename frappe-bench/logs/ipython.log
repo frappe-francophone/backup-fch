@@ -1,0 +1,318 @@
+2024-08-19 17:44:24,994 INFO ipython === bench console session ===
+2024-08-19 17:44:24,995 INFO ipython doc = frappe.get_doc("Salary Slip", "Sal Slip/02016/00001")
+2024-08-19 17:44:24,995 INFO ipython holidays = self.get_holidays_for_employee("2024-06-21","2024-07-20")
+2024-08-19 17:44:24,995 INFO ipython holidays = doc.get_holidays_for_employee("2024-06-21","2024-07-20")
+2024-08-19 17:44:24,995 INFO ipython holidays
+2024-08-19 17:44:24,995 INFO ipython working_days_list = [
+			add_days(getdate("2024-06-21"), days=day) for day in range(0, working_days)
+		]
+2024-08-19 17:44:24,995 INFO ipython from frappe.utils import (
+	add_days,
+	cint,
+	cstr,
+	date_diff,
+	flt,
+	formatdate,
+	get_first_day,
+	getdate,
+	money_in_words,
+	rounded,
+)
+2024-08-19 17:44:24,996 INFO ipython working_days = date_diff("2024-07-20", "2024-06-21") + 1
+2024-08-19 17:44:24,996 INFO ipython working_days_list = [
+			add_days(getdate("2024-06-21"), days=day) for day in range(0, working_days)
+		]
+2024-08-19 17:44:24,996 INFO ipython import frappe
+2024-08-19 17:44:24,996 INFO ipython working_days_list = [
+			add_days(getdate("2024-06-21"), days=day) for day in range(0, working_days)
+		]
+2024-08-19 17:44:24,996 INFO ipython working_days_list = [
+			frappe.utils.add_days(getdate("2024-06-21"), days=day) for day in range(0, working_days)
+		]
+2024-08-19 17:44:24,996 INFO ipython working_days_list = [
+			frappe.utils.add_days(frappe.utilsgetdate("2024-06-21"), days=day) for day in range(0, working_days)
+		]
+2024-08-19 17:44:24,996 INFO ipython working_days_list = [
+			frappe.utils.add_days(frappe.utils.getdate("2024-06-21"), days=day) for day in range(0, working_days)
+		]
+2024-08-19 17:44:24,996 INFO ipython working_days_list
+2024-08-19 17:44:24,997 INFO ipython lwp = 0
+2024-08-19 17:44:24,997 INFO ipython leave_type_lwp = []
+2024-08-19 17:44:24,997 INFO ipython holidays = "','".join(holidays)
+2024-08-19 17:44:24,997 INFO ipython feries = holidays.split(',')
+2024-08-19 17:44:24,997 INFO ipython feries
+2024-08-19 17:44:24,997 INFO ipython daily_wages_fraction_for_half_day = (
+			flt(frappe.db.get_value("Payroll Settings", None, "daily_wages_fraction_for_half_day")) or 0.5
+		)
+2024-08-19 17:44:24,997 INFO ipython nb_working_days = len(working_days_list)
+2024-08-19 17:44:24,998 INFO ipython for d in range(nb_working_days + len(feries)):
+	date = add_days(cstr(getdate("2024-06-21")), d)
+	leave = get_lwp_or_ppl_for_date_2(date, "02016", holidays)
+
+	if leave:
+		equivalent_lwp_count = 0
+		is_half_day_leave = cint(leave[0].is_half_day)
+		is_partially_paid_leave = cint(leave[0].is_ppl)
+		fraction_of_daily_salary_per_leave = flt(leave[0].fraction_of_daily_salary_per_leave)
+
+		equivalent_lwp_count = (1 - daily_wages_fraction_for_half_day) if is_half_day_leave else 1
+
+		if is_partially_paid_leave:
+			equivalent_lwp_count *= (fraction_of_daily_salary_per_leave if fraction_of_daily_salary_per_leave else 1)
+
+		lwp += equivalent_lwp_count
+
+		leave_type_lwp.append({
+			"leave_type": leave[0].name,
+			"jour": 1,
+			"fraction": fraction_of_daily_salary_per_leave,
+		})
+        
+2024-08-19 17:44:24,998 INFO ipython def get_lwp_or_ppl_for_date_2(date, employee, holidays):
+	LeaveApplication = frappe.qb.DocType("Leave Application")
+	LeaveType = frappe.qb.DocType("Leave Type")
+
+	is_half_day = (
+		frappe.qb.terms.Case()
+		.when(
+			(
+				(LeaveApplication.half_day_date == date)
+				| (LeaveApplication.from_date == LeaveApplication.to_date)
+			),
+			LeaveApplication.half_day,
+		)
+		.else_(0)
+	).as_("is_half_day")
+
+	query = (
+		frappe.qb.from_(LeaveApplication)
+		.inner_join(LeaveType)
+		.on((LeaveType.name == LeaveApplication.leave_type))
+		.select(
+			LeaveType.name,
+			LeaveType.is_ppl,
+			LeaveType.fraction_of_daily_salary_per_leave,
+			(is_half_day),
+		)
+		.where(
+			(((LeaveType.is_lwp == 1) | (LeaveType.is_ppl == 1)))
+			& (LeaveApplication.docstatus == 1)
+			& (LeaveApplication.status == "Approved")
+			& (LeaveApplication.employee == employee)
+			& ((LeaveApplication.salary_slip.isnull()) | (LeaveApplication.salary_slip == ""))
+			& ((LeaveApplication.from_date <= date) & (date <= LeaveApplication.to_date))
+		)
+		#.order_by(LeaveType.name)
+	)
+
+	# if it's a holiday only include if leave type has "include holiday" enabled
+	if date in holidays:
+		query = query.where((LeaveType.include_holiday == "1"))
+
+	return query.run(as_dict=True)
+    
+2024-08-19 17:44:24,998 INFO ipython for d in range(nb_working_days + len(feries)):
+	date = add_days(cstr(getdate("2024-06-21")), d)
+	leave = get_lwp_or_ppl_for_date_2(date, "02016", holidays)
+
+	if leave:
+		equivalent_lwp_count = 0
+		is_half_day_leave = cint(leave[0].is_half_day)
+		is_partially_paid_leave = cint(leave[0].is_ppl)
+		fraction_of_daily_salary_per_leave = flt(leave[0].fraction_of_daily_salary_per_leave)
+
+		equivalent_lwp_count = (1 - daily_wages_fraction_for_half_day) if is_half_day_leave else 1
+
+		if is_partially_paid_leave:
+			equivalent_lwp_count *= (fraction_of_daily_salary_per_leave if fraction_of_daily_salary_per_leave else 1)
+
+		lwp += equivalent_lwp_count
+
+		leave_type_lwp.append({
+			"leave_type": leave[0].name,
+			"jour": 1,
+			"fraction": fraction_of_daily_salary_per_leave,
+		})
+        
+2024-08-19 17:44:24,998 INFO ipython occurrence_counts = {}
+2024-08-19 17:44:24,998 INFO ipython total_conge = 0
+2024-08-19 17:44:24,998 INFO ipython for entry in leave_type_lwp:
+    total_conge = total_conge + 1
+    leave_type = entry['leave_type']
+    if leave_type in occurrence_counts:
+        occurrence_counts[leave_type] += 1
+    else:
+        occurrence_counts[leave_type] = 1
+        
+2024-08-19 17:44:24,999 INFO ipython occurrence_counts
+2024-08-19 17:44:24,999 INFO ipython nb_working_days + len(feries)
+2024-08-19 17:44:24,999 INFO ipython nb_working_days
+2024-08-19 17:44:24,999 INFO ipython working_days_list
+2024-08-19 17:44:24,999 INFO ipython if not cint(include_holidays_in_total_working_days):
+			working_days_list = [i for i in working_days_list if i not in holidays]
+
+			working_days -= len(holidays)
+			if working_days < 0:
+				frappe.throw(_("There are more holidays than working days this month."))
+                
+2024-08-19 17:44:24,999 INFO ipython payroll_based_on = frappe.db.get_value("Payroll Settings", None, "payroll_based_on")
+2024-08-19 17:44:24,999 INFO ipython include_holidays_in_total_working_days = frappe.db.get_single_value(
+			"Payroll Settings", "include_holidays_in_total_working_days"
+		)
+2024-08-19 17:44:24,999 INFO ipython if not (joining_date and relieving_date):
+			#joining_date, relieving_date = self.get_joining_and_relieving_dates()
+			joining_date, relieving_date = frappe.get_cached_value(
+				"Employee", self.employee, ("date_of_joining", "relieving_date")
+			)
+            
+2024-08-19 17:44:25,000 INFO ipython working_days_list = [
+			add_days(getdate(self.start_date), days=day) for day in range(0, working_days)
+		]
+2024-08-19 17:44:25,000 INFO ipython if not cint(include_holidays_in_total_working_days):
+			working_days_list = [i for i in working_days_list if i not in holidays]
+
+			working_days -= len(holidays)
+			if working_days < 0:
+				frappe.throw(_("There are more holidays than working days this month."))
+2024-08-19 17:44:25,000 INFO ipython holidays
+2024-08-19 17:44:25,000 INFO ipython working_days_list = [i for i in working_days_list if i not in holidays]
+2024-08-19 17:44:25,000 INFO ipython holidays
+2024-08-19 17:44:25,000 INFO ipython holidays = [ "2024-06-23','2024-06-30','2024-07-07','2024-07-14"]
+2024-08-19 17:44:25,000 INFO ipython working_days_list = [i for i in working_days_list if i not in holidays]
+2024-08-19 17:44:25,001 INFO ipython holi = [ "2024-06-23','2024-06-30','2024-07-07','2024-07-14"]
+2024-08-19 17:44:25,001 INFO ipython working_days_list = [i for i in working_days_list if i not in holi]
+2024-08-19 17:44:25,001 INFO ipython working_days_list = [i for i in working_days_list if i not in  [ "2024-06-23','2024-06-30','2024-07-07','2024-07-14"]]
+2024-08-19 17:44:25,001 INFO ipython working_days_list
+2024-08-19 17:44:25,001 INFO ipython [i for i in working_days_list if i not in  [ "2024-
+    ...: 06-23','2024-06-30','2024-07-07','2024-07-14"]]
+2024-08-19 17:44:25,001 INFO ipython [i for i in working_days_list if i not in  [ "2024-06-23','2024-06-30','2024-07-07','2024-07-14"]]
+2024-08-19 17:44:25,001 INFO ipython working_days_list
+2024-08-19 17:44:25,002 INFO ipython [i for i in working_days_list if i not in  [ "2024-06-23','2024-06-30','2024-07-07','2024-07-14"]]
+2024-08-19 17:44:25,002 INFO ipython [i for i in working_days_list if i not in  [ '2024-06-23','2024-06-30','2024-07-07','2024-07-14']]
+2024-08-19 17:44:25,002 INFO ipython [i for i in working_days_list if i not in  [ frappe.utils.getdate('2024-06-23')]]
+2024-08-19 17:44:25,002 INFO ipython === session end ===
+2024-08-19 18:33:12,476 INFO ipython === bench console session ===
+2024-08-19 18:33:12,477 INFO ipython clear
+2024-08-19 18:33:12,477 INFO ipython from hrms.payroll.doctype.salary_slip.salary_slip import SalarySlip
+import frappe
+from frappe import _, msgprint
+from frappe.utils import (
+	add_days,
+	cint,
+	cstr,
+	date_diff,
+	flt,
+	formatdate,
+	get_first_day,
+	getdate,
+	money_in_words,
+	rounded,
+)
+from lending.loan_management.doctype.process_loan_interest_accrual.process_loan_interest_accrual import (
+	process_loan_interest_accrual_for_term_loans,
+)
+from lending.loan_management.doctype.loan_repayment.loan_repayment import (
+	calculate_amounts,
+	create_repayment_entry,
+)
+from paie.override.loan_repayment import (
+	create_repayment_entry2,
+)
+from hrms.payroll.doctype.payroll_period.payroll_period import (
+	get_payroll_period,
+	get_period_factor,
+)
+from collections import defaultdict
+2024-08-19 18:33:12,477 INFO ipython import frappe
+from frappe import _, msgprint
+from frappe.utils import (
+	add_days,
+	cint,
+	cstr,
+	date_diff,
+	flt,
+	formatdate,
+	get_first_day,
+	getdate,
+	money_in_words,
+	rounded,
+)
+from lending.loan_management.doctype.process_loan_interest_accrual.process_loan_interest_accrual import (
+	process_loan_interest_accrual_for_term_loans,
+)
+from lending.loan_management.doctype.loan_repayment.loan_repayment import (
+	calculate_amounts,
+	create_repayment_entry,
+)
+from paie.override.loan_repayment import (
+	create_repayment_entry2,
+)
+from hrms.payroll.doctype.payroll_period.payroll_period import (
+	get_payroll_period,
+	get_period_factor,
+)
+from collections import defaultdict
+2024-08-19 18:33:12,477 INFO ipython import frappe
+from frappe import _, msgprint
+from frappe.utils import (
+	add_days,
+	cint,
+	cstr,
+	date_diff,
+	flt,
+	formatdate,
+	get_first_day,
+	getdate,
+	money_in_words,
+	rounded,
+)
+2024-08-19 18:33:12,477 INFO ipython from hrms.payroll.doctype.payroll_period.payroll_period import (
+	get_payroll_period,
+	get_period_factor,
+)
+from collections import defaultdict
+2024-08-19 18:33:12,477 INFO ipython clear
+2024-08-19 18:33:12,477 INFO ipython doc = frappe.get_doc("Salary Slip", "Sal Slip/02016/00001")
+2024-08-19 18:33:12,478 INFO ipython payroll_based_on = frappe.db.get_value("Payroll Settings", None, "payroll_based_on")
+2024-08-19 18:33:12,478 INFO ipython include_holidays_in_total_working_days = frappe.db.get_single_value(
+			"Payroll Settings", "include_holidays_in_total_working_days"
+		)
+2024-08-19 18:33:12,478 INFO ipython working_days = date_diff("2024-07-20", "2024-06-21") + 1
+2024-08-19 18:33:12,478 INFO ipython holidays = doc.get_holidays_for_employee("2024-06-21","2024-07-20")
+2024-08-19 18:33:12,478 INFO ipython working_days_list = [
+			add_days(getdate("2024-06-21"), days=day) for day in range(0, working_days)
+		]
+2024-08-19 18:33:12,478 INFO ipython working_days_list = [
+			frappe.utils.add_days(frappe.utils.getdate("2024-06-21"), days=day) for day in range(0, working_days)
+		]
+2024-08-19 18:33:12,478 INFO ipython working_days_list = [i for i in working_days_list if i not in holidays]
+2024-08-19 18:33:12,479 INFO ipython holidays
+2024-08-19 18:33:12,479 INFO ipython wd = []
+2024-08-19 18:33:12,479 INFO ipython for i in working_days_list:
+    if i not in holidays:
+        wd.append(i)
+        
+2024-08-19 18:33:12,479 INFO ipython wd
+2024-08-19 18:33:12,479 INFO ipython for i in working_days_list:
+    if i not in holidays:
+        str(i)
+        
+2024-08-19 18:33:12,479 INFO ipython for i in working_days_list:
+    if i not in holidays:
+        print(str(i))
+        
+2024-08-19 18:33:12,479 INFO ipython  working_days_list = [i for i in working_days_list if str(i) not in holidays]
+2024-08-19 18:33:12,480 INFO ipython for i in working_days_list:
+    if str(i) not in holidays:
+        print(str(i))
+        
+2024-08-19 18:33:12,480 INFO ipython frappe.get_all(
+		"Holiday", fields=["description", "holiday_date"], filters={"start_date": "2024-06-21", "end_date" : "2024-07-20"}, order_by="holiday_date"
+	)
+2024-08-19 18:33:12,480 INFO ipython frappe.get_all(
+		"Holiday", fields=["description", "holiday_date"], filters={"start_date": "2024-06-21", "end_date" : "2024-07-20"}, order_by="holiday_date"
+	).as_("is_half_day")
+2024-08-19 18:33:12,480 INFO ipython frappe.get_all(
+		"Holiday", fields=["description", "holiday_date"], filters={"start_date": "2024-06-21", "end_date" : "2024-07-20"}, order_by="holiday_date"
+	).ase
+2024-08-19 18:33:12,480 INFO ipython === session end ===

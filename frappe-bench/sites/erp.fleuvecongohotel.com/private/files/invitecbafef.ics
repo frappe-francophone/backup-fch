@@ -1,0 +1,66 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VTIMEZONE
+TZID:Africa/Lagos
+X-LIC-LOCATION:Africa/Lagos
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0100
+TZNAME:WAT
+DTSTART:19700101T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTART;TZID=Africa/Lagos:20231113T080000
+DTEND;TZID=Africa/Lagos:20231113T160000
+DTSTAMP:20231113T090345Z
+ORGANIZER;CN=Dernis Ebama:mailto:ebamadernis@gmail.com
+UID:6e1ejiiu2h75kq4hdbd8ijkjta@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=bernicembayo7@gmail.com;X-NUM-GUESTS=0:mailto:bernicembayo7@gmail.c
+ om
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=danykasthemba@gmail.com;X-NUM-GUESTS=0:mailto:danykasthemba@gmail.c
+ om
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE
+ ;CN=Dernis Ebama;X-NUM-GUESTS=0:mailto:ebamadernis@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=glodykilundu@gmail.com;X-NUM-GUESTS=0:mailto:glodykilundu@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=gz.pmels@ls-rdc.com;X-NUM-GUESTS=0:mailto:gz.pmels@ls-rdc.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=lbb.bumgpme@ls-rdc.com;X-NUM-GUESTS=0:mailto:lbb.bumgpme@ls-rdc.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=linabwanga@gmail.com;X-NUM-GUESTS=0:mailto:linabwanga@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=patrick.ntambwe@ls-rdc.com;X-NUM-GUESTS=0:mailto:patrick.ntambwe@ls
+ -rdc.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=tshanyserge@gmail.com;X-NUM-GUESTS=0:mailto:tshanyserge@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=compta@ls-rdc.com;X-NUM-GUESTS=0:mailto:compta@ls-rdc.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=lsrdcsupport@ls-rdc.com;X-NUM-GUESTS=0:mailto:lsrdcsupport@ls-rdc.c
+ om
+X-GOOGLE-CONFERENCE:https://meet.google.com/kam-dkzt-ekh
+X-MICROSOFT-CDO-OWNERAPPTID:1617928288
+CREATED:20231113T090137Z
+DESCRIPTION:- Vérifications mails\n- Création des planning\n- Simulations e
+ t Adaptation Bulletin Enabel\n- Travail sur les profils Enabel\n- Vérificat
+ ions des traductions\n\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-\nParticiper via Google Meet : https://
+ meet.google.com/kam-dkzt-ekh\n\nPour en savoir plus sur Meet : https://supp
+ ort.google.com/a/users/answer/9282720\n\nVeuillez ne pas modifier cette sec
+ tion.\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:
+ ~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20231113T090336Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Enabel : Les Simulation
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,1009 @@
+2024-07-19 14:40:13,495 DEBUG cd frappe-bench && python3 -m venv env
+2024-07-19 14:40:18,983 DEBUG cd frappe-bench && /home/fch/frappe-bench/env/bin/python -m pip install --quiet --upgrade pip
+2024-07-19 14:40:22,654 DEBUG cd frappe-bench && /home/fch/frappe-bench/env/bin/python -m pip install --quiet wheel
+2024-07-19 14:40:26,933 LOG Getting frappe
+2024-07-19 14:40:26,933 DEBUG cd frappe-bench/apps && git clone https://github.com/frappe/frappe.git --branch version-14 --depth 1 --origin upstream
+2024-07-19 14:41:04,494 LOG Installing frappe
+2024-07-19 14:41:04,494 DEBUG cd /home/fch/frappe-bench && /home/fch/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/fch/frappe-bench/apps/frappe 
+2024-07-19 14:42:04,545 DEBUG cd /home/fch/frappe-bench/apps/frappe && yarn install --check-files
+2024-07-19 14:42:25,602 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-07-19 14:42:25,602 DEBUG cd frappe-bench && bench build
+2024-07-19 14:42:25,779 INFO /home/fch/.local/bin/bench build
+2024-07-19 14:42:50,827 LOG setting up backups
+2024-07-19 14:42:50,860 LOG backups were set up
+2024-07-19 14:42:50,860 INFO Bench frappe-bench initialized
+2024-07-19 14:48:14,837 INFO /home/fch/.local/bin/bench new-site erp.fleuvecongohotel.com
+2024-07-19 14:50:19,107 INFO /home/fch/.local/bin/bench get-app payments
+2024-07-19 14:50:20,016 LOG Getting payments
+2024-07-19 14:50:20,017 DEBUG cd ./apps && git clone https://github.com/frappe/payments.git  --depth 1 --origin upstream
+2024-07-19 14:50:21,440 LOG Installing payments
+2024-07-19 14:50:21,441 DEBUG cd /home/fch/frappe-bench && /home/fch/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/fch/frappe-bench/apps/payments 
+2024-07-19 14:50:26,814 DEBUG bench build --app payments
+2024-07-19 14:50:26,989 INFO /home/fch/.local/bin/bench build --app payments
+2024-07-19 14:50:32,355 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-07-19 14:50:45,483 INFO /home/fch/.local/bin/bench get-app --branch version-14 erpnext
+2024-07-19 14:50:46,304 LOG Getting erpnext
+2024-07-19 14:50:46,304 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git --branch version-14 --depth 1 --origin upstream
+2024-07-19 14:50:57,456 LOG Installing erpnext
+2024-07-19 14:50:57,456 DEBUG cd /home/fch/frappe-bench && /home/fch/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/fch/frappe-bench/apps/erpnext 
+2024-07-19 14:51:55,591 DEBUG cd /home/fch/frappe-bench/apps/erpnext && yarn install --check-files
+2024-07-19 14:51:59,335 DEBUG bench build --app erpnext
+2024-07-19 14:51:59,513 INFO /home/fch/.local/bin/bench build --app erpnext
+2024-07-19 14:52:06,956 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-07-19 14:53:54,080 INFO /home/fch/.local/bin/bench get-app --branch version-14 hrms
+2024-07-19 14:53:54,986 LOG Getting hrms
+2024-07-19 14:53:54,987 DEBUG cd ./apps && git clone https://github.com/frappe/hrms.git --branch version-14 --depth 1 --origin upstream
+2024-07-19 14:53:58,426 LOG Installing hrms
+2024-07-19 14:53:58,427 DEBUG cd /home/fch/frappe-bench && /home/fch/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/fch/frappe-bench/apps/hrms 
+2024-07-19 14:54:01,689 DEBUG bench build --app hrms
+2024-07-19 14:54:01,864 INFO /home/fch/.local/bin/bench build --app hrms
+2024-07-19 14:54:07,506 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-07-19 14:54:31,135 INFO /home/fch/.local/bin/bench get-app https://github.com/dachir/paie
+2024-07-19 14:54:31,149 LOG Getting paie
+2024-07-19 14:54:31,149 DEBUG cd ./apps && git clone https://github.com/dachir/paie  --depth 1 --origin upstream
+2024-07-19 14:54:57,174 LOG Installing paie
+2024-07-19 14:54:57,175 DEBUG cd /home/fch/frappe-bench && /home/fch/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/fch/frappe-bench/apps/paie 
+2024-07-19 14:54:59,699 DEBUG bench build --app paie
+2024-07-19 14:54:59,870 INFO /home/fch/.local/bin/bench build --app paie
+2024-07-19 14:55:04,935 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-07-19 14:55:48,628 INFO /home/fch/.local/bin/bench --site erp.fleuvecongohotel.com install-app erpnext hrms paie
+2024-07-19 15:01:18,368 INFO /home/fch/.local/bin/bench get-app https://github.com/dachir/fleuve_congo_custom
+2024-07-19 15:01:18,383 LOG Getting fleuve_congo_custom
+2024-07-19 15:01:18,383 DEBUG cd ./apps && git clone https://github.com/dachir/fleuve_congo_custom  --depth 1 --origin upstream
+2024-07-19 15:01:24,365 LOG Installing fleuve_congo_custom
+2024-07-19 15:01:24,366 DEBUG cd /home/fch/frappe-bench && /home/fch/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/fch/frappe-bench/apps/fleuve_congo_custom 
+2024-07-19 15:01:26,669 DEBUG bench build --app fleuve_congo_custom
+2024-07-19 15:01:26,846 INFO /home/fch/.local/bin/bench build --app fleuve_congo_custom
+2024-07-19 15:01:31,975 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-07-19 15:01:53,281 INFO /home/fch/.local/bin/bench --site erp.fleuvecongohotel.com install-app fleuve_congo_custom
+2024-07-19 15:02:38,617 INFO /home/fch/.local/bin/bench --site erp.fleuvecongohotel.com enable-scheduler
+2024-07-19 15:02:55,427 INFO /home/fch/.local/bin/bench --site erp.fleuvecongohotel.com set-maintenance-mode off
+2024-07-19 15:03:11,975 INFO /usr/local/bin/bench setup production fch
+2024-07-19 15:03:12,898 DEBUG sudo /usr/bin/python3 -m pip install ansible
+2024-07-19 15:03:59,530 DEBUG bench setup role fail2ban
+2024-07-19 15:03:59,940 INFO /usr/local/bin/bench setup role fail2ban
+2024-07-19 15:04:02,587 WARNING /usr/local/bin/bench setup role fail2ban executed with exit code 1
+2024-07-19 15:04:02,713 WARNING bench setup role fail2ban executed with exit code 1
+2024-07-19 15:04:02,713 WARNING /usr/local/bin/bench setup production fch executed with exit code 1
+2024-07-19 15:04:18,280 INFO /home/fch/.local/bin/bench setup nginx
+2024-07-19 15:05:13,969 INFO /usr/local/bin/bench setup production fch
+2024-07-19 15:05:14,897 DEBUG bench setup role fail2ban
+2024-07-19 15:05:15,300 INFO /usr/local/bin/bench setup role fail2ban
+2024-07-19 15:05:17,210 WARNING /usr/local/bin/bench setup role fail2ban executed with exit code 1
+2024-07-19 15:05:17,302 WARNING bench setup role fail2ban executed with exit code 1
+2024-07-19 15:05:17,302 WARNING /usr/local/bin/bench setup production fch executed with exit code 1
+2024-07-19 15:06:47,740 INFO /usr/local/bin/bench setup production fch
+2024-07-19 15:06:48,687 DEBUG bench setup role fail2ban
+2024-07-19 15:06:49,095 INFO /usr/local/bin/bench setup role fail2ban
+2024-07-19 15:07:09,922 DEBUG bench setup role nginx
+2024-07-19 15:07:10,331 INFO /usr/local/bin/bench setup role nginx
+2024-07-19 15:07:32,385 DEBUG bench setup role supervisor
+2024-07-19 15:07:32,792 INFO /usr/local/bin/bench setup role supervisor
+2024-07-19 15:07:48,824 LOG Updated supervisord.conf: 'chmod' changed from '0700                       ; sockef file mode (default 0700)' to '0760'
+2024-07-19 15:07:48,825 LOG Updated supervisord.conf: 'chown' changed from '' to 'fch:fch'
+2024-07-19 15:07:56,068 LOG Updated supervisord.conf at '/etc/supervisor/supervisord.conf'
+2024-07-19 15:07:56,068 DEBUG sudo systemctl reload supervisor
+2024-07-19 15:07:59,373 DEBUG sudo /usr/sbin/nginx -t
+2024-07-19 15:07:59,396 DEBUG sudo systemctl reload nginx
+2024-07-19 15:08:19,292 INFO /home/fch/.local/bin/bench setup nginx
+2024-07-19 15:08:35,714 INFO /usr/local/bin/bench setup production fch
+2024-07-19 15:08:36,646 ERROR supervisord.conf not updated
+2024-07-19 15:08:41,006 DEBUG /usr/bin/supervisorctl reread
+2024-07-19 15:08:41,330 DEBUG /usr/bin/supervisorctl update
+2024-07-19 15:08:41,685 DEBUG sudo /usr/sbin/nginx -t
+2024-07-19 15:08:41,709 DEBUG sudo systemctl reload nginx
+2024-07-19 15:08:41,843 INFO /usr/local/bin/bench schedule
+2024-07-19 15:08:41,846 INFO /usr/local/bin/bench worker --queue default
+2024-07-19 15:08:41,856 INFO /usr/local/bin/bench worker --queue short
+2024-07-19 15:08:41,861 INFO /usr/local/bin/bench worker --queue long
+2024-07-19 15:42:13,256 INFO /home/fch/.local/bin/bench --site erp.fleuvecongohotel.com restore /home/fch/20240719_152949-fleuvecongo_go-tech_cloud-database.sql.gz --with-public-files /home/fch/20240719_152949-fleuvecongo_go-tech_cloud-files.tar --with-private-files /home/fch/20240719_152949-fleuvecongo_go-tech_cloud-private-files.tar
+2024-07-19 15:44:04,612 INFO /home/fch/.local/bin/bench --site erp.fleuvecongohotel.com migrate
+2024-07-19 15:49:37,578 INFO /usr/local/bin/bench schedule
+2024-07-19 15:49:37,587 INFO /usr/local/bin/bench worker --queue default
+2024-07-19 15:49:37,587 INFO /usr/local/bin/bench worker --queue short
+2024-07-19 15:49:37,589 INFO /usr/local/bin/bench worker --queue long
+2024-07-19 18:00:01,379 INFO /usr/local/bin/bench --verbose --site all backup
+2024-07-19 18:00:01,381 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-07-20 00:00:02,136 INFO /usr/local/bin/bench --verbose --site all backup
+2024-07-20 00:00:02,139 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-07-20 06:00:01,982 INFO /usr/local/bin/bench --verbose --site all backup
+2024-07-20 06:00:01,990 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-07-20 12:00:02,073 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-07-20 12:00:02,076 INFO /usr/local/bin/bench --verbose --site all backup
+2024-07-20 18:00:01,641 INFO /usr/local/bin/bench --verbose --site all backup
+2024-07-20 18:00:01,649 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-07-21 00:00:02,067 INFO /usr/local/bin/bench --verbose --site all backup
+2024-07-21 00:00:02,073 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-07-21 06:00:02,044 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-07-21 06:00:02,051 INFO /usr/local/bin/bench --verbose --site all backup
+2024-07-21 12:00:02,201 INFO /usr/local/bin/bench --verbose --site all backup
+2024-07-21 12:00:02,206 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-07-21 18:00:01,654 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-07-21 18:00:01,656 INFO /usr/local/bin/bench --verbose --site all backup
+2024-07-22 00:00:04,934 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-07-22 00:00:04,934 INFO /usr/local/bin/bench --verbose --site all backup
+2024-07-22 06:00:01,540 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-07-22 06:00:01,545 INFO /usr/local/bin/bench --verbose --site all backup
+2024-07-22 12:00:01,826 INFO /usr/local/bin/bench --verbose --site all backup
+2024-07-22 12:00:01,835 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-07-22 18:00:01,880 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-07-22 18:00:01,886 INFO /usr/local/bin/bench --verbose --site all backup
+2024-07-23 00:00:01,740 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-07-23 00:00:01,747 INFO /usr/local/bin/bench --verbose --site all backup
+2024-07-23 06:00:01,252 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-07-23 06:00:01,257 INFO /usr/local/bin/bench --verbose --site all backup
+2024-07-23 12:00:02,124 INFO /usr/local/bin/bench --verbose --site all backup
+2024-07-23 12:00:02,128 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-07-23 18:00:01,593 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-07-23 18:00:01,600 INFO /usr/local/bin/bench --verbose --site all backup
+2024-07-24 00:00:02,178 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-07-24 00:00:02,180 INFO /usr/local/bin/bench --verbose --site all backup
+2024-07-24 06:00:01,478 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-07-24 06:00:01,487 INFO /usr/local/bin/bench --verbose --site all backup
+2024-07-24 12:00:01,408 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-07-24 12:00:01,416 INFO /usr/local/bin/bench --verbose --site all backup
+2024-07-24 18:00:01,862 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-07-24 18:00:01,870 INFO /usr/local/bin/bench --verbose --site all backup
+2024-07-25 00:00:01,477 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-07-25 00:00:01,479 INFO /usr/local/bin/bench --verbose --site all backup
+2024-07-25 06:00:02,057 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-07-25 06:00:02,059 INFO /usr/local/bin/bench --verbose --site all backup
+2024-07-25 12:00:01,453 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-07-25 12:00:01,456 INFO /usr/local/bin/bench --verbose --site all backup
+2024-07-25 18:00:01,296 INFO /usr/local/bin/bench --verbose --site all backup
+2024-07-25 18:00:01,305 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-07-26 00:00:01,347 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-07-26 00:00:01,348 INFO /usr/local/bin/bench --verbose --site all backup
+2024-07-26 06:00:01,575 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-07-26 06:00:01,578 INFO /usr/local/bin/bench --verbose --site all backup
+2024-07-26 12:00:01,301 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-07-26 12:00:01,303 INFO /usr/local/bin/bench --verbose --site all backup
+2024-07-26 18:00:01,297 INFO /usr/local/bin/bench --verbose --site all backup
+2024-07-26 18:00:01,306 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-07-27 00:00:01,213 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-07-27 00:00:01,225 INFO /usr/local/bin/bench --verbose --site all backup
+2024-07-27 06:00:01,469 INFO /usr/local/bin/bench --verbose --site all backup
+2024-07-27 06:00:01,470 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-07-27 12:00:01,310 INFO /usr/local/bin/bench --verbose --site all backup
+2024-07-27 12:00:01,313 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-07-27 18:00:01,912 INFO /usr/local/bin/bench --verbose --site all backup
+2024-07-27 18:00:01,918 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-07-28 00:00:02,093 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-07-28 00:00:02,099 INFO /usr/local/bin/bench --verbose --site all backup
+2024-07-28 06:00:01,195 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-07-28 06:00:01,197 INFO /usr/local/bin/bench --verbose --site all backup
+2024-07-28 12:00:02,016 INFO /usr/local/bin/bench --verbose --site all backup
+2024-07-28 12:00:02,029 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-07-28 18:00:01,574 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-07-28 18:00:01,574 INFO /usr/local/bin/bench --verbose --site all backup
+2024-07-29 00:00:02,219 INFO /usr/local/bin/bench --verbose --site all backup
+2024-07-29 00:00:02,221 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-07-29 06:00:01,307 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-07-29 06:00:01,316 INFO /usr/local/bin/bench --verbose --site all backup
+2024-07-29 12:00:01,214 INFO /usr/local/bin/bench --verbose --site all backup
+2024-07-29 12:00:01,219 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-07-29 18:00:02,134 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-07-29 18:00:02,136 INFO /usr/local/bin/bench --verbose --site all backup
+2024-07-30 00:00:01,331 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-07-30 00:00:01,331 INFO /usr/local/bin/bench --verbose --site all backup
+2024-07-30 06:00:02,121 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-07-30 06:00:02,125 INFO /usr/local/bin/bench --verbose --site all backup
+2024-07-30 12:00:01,873 INFO /usr/local/bin/bench --verbose --site all backup
+2024-07-30 12:00:01,874 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-07-30 18:00:01,629 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-07-30 18:00:01,630 INFO /usr/local/bin/bench --verbose --site all backup
+2024-07-31 00:00:02,063 INFO /usr/local/bin/bench --verbose --site all backup
+2024-07-31 00:00:02,063 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-07-31 06:00:01,743 INFO /usr/local/bin/bench --verbose --site all backup
+2024-07-31 06:00:01,749 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-07-31 12:00:01,222 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-07-31 12:00:01,225 INFO /usr/local/bin/bench --verbose --site all backup
+2024-07-31 18:00:01,222 INFO /usr/local/bin/bench --verbose --site all backup
+2024-07-31 18:00:01,230 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-01 00:00:01,798 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-01 00:00:01,803 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-01 06:00:01,901 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-01 06:00:01,906 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-01 12:00:01,642 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-01 12:00:01,646 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-01 18:00:02,184 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-01 18:00:02,186 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-02 00:00:02,115 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-02 00:00:02,122 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-02 06:00:01,422 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-02 06:00:01,431 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-02 12:00:02,068 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-02 12:00:02,074 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-02 18:00:01,691 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-02 18:00:01,692 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-03 00:00:01,603 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-03 00:00:01,608 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-03 06:00:02,171 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-03 06:00:02,172 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-03 12:00:02,032 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-03 12:00:02,040 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-03 18:00:01,402 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-03 18:00:01,410 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-04 00:00:01,492 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-04 00:00:01,499 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-04 06:00:01,849 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-04 06:00:01,854 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-04 12:00:01,437 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-04 12:00:01,438 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-04 18:00:02,118 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-04 18:00:02,120 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-05 00:00:02,044 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-05 00:00:02,048 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-05 06:00:01,416 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-05 06:00:01,425 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-05 12:00:01,482 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-05 12:00:01,487 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-05 14:56:13,306 INFO /home/fch/.local/bin/bench --site erp.fleuvecongohotel.com restore /home/fch/20240805_130043-fleuvecongo_go-tech_cloud-database.sql.gz
+2024-08-05 15:02:41,969 INFO /home/fch/.local/bin/bench --site erp.fleuvecongohotel.com migrate
+2024-08-05 15:08:45,253 INFO /usr/local/bin/bench schedule
+2024-08-05 15:08:45,262 INFO /usr/local/bin/bench worker --queue default
+2024-08-05 15:08:45,264 INFO /usr/local/bin/bench worker --queue short
+2024-08-05 15:08:45,268 INFO /usr/local/bin/bench worker --queue long
+2024-08-05 18:00:01,524 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-05 18:00:01,526 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-06 00:00:01,874 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-06 00:00:01,875 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-06 06:00:01,982 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-06 06:00:01,988 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-06 12:00:02,129 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-06 12:00:02,133 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-06 18:00:01,750 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-06 18:00:01,755 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-07 00:00:01,766 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-07 00:00:01,768 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-07 06:00:01,695 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-07 06:00:01,698 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-07 12:00:01,708 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-07 12:00:01,710 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-07 18:00:02,106 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-07 18:00:02,112 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-08 00:00:01,517 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-08 00:00:01,518 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-08 06:00:01,462 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-08 06:00:01,466 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-08 12:00:01,994 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-08 12:00:01,996 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-08 18:00:01,448 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-08 18:00:01,450 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-09 00:00:01,699 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-09 00:00:01,704 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-09 06:00:01,744 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-09 06:00:01,749 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-09 12:00:01,867 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-09 12:00:01,870 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-09 18:00:01,860 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-09 18:00:01,870 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-09 20:59:52,345 INFO /home/fch/.local/bin/bench set-config -g developer_mode 1
+2024-08-09 21:02:23,349 INFO /home/fch/.local/bin/bench --sites erp.fleuvecongohotel.com migrate
+2024-08-09 21:02:46,064 INFO /home/fch/.local/bin/bench --site erp.fleuvecongohotel.com migrate
+2024-08-09 21:17:25,563 INFO /home/fch/.local/bin/bench set-config -g developer_mode 0
+2024-08-09 21:17:40,134 INFO /home/fch/.local/bin/bench --site erp.fleuvecongohotel.com migrate
+2024-08-10 00:00:01,465 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-10 00:00:01,468 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-10 06:00:01,312 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-10 06:00:01,316 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-10 12:00:01,708 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-10 12:00:01,711 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-10 18:00:01,730 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-10 18:00:01,733 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-11 00:00:01,218 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-11 00:00:01,220 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-11 06:00:01,564 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-11 06:00:01,574 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-11 12:00:01,706 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-11 12:00:01,710 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-11 18:00:01,757 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-11 18:00:01,763 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-12 00:00:01,259 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-12 00:00:01,265 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-12 06:00:01,492 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-12 06:00:01,494 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-12 12:00:01,930 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-12 12:00:01,935 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-12 18:00:01,944 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-12 18:00:01,946 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-13 00:00:01,804 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-13 00:00:01,810 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-13 06:00:01,896 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-13 06:00:01,898 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-13 12:00:01,535 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-13 12:00:01,539 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-13 18:00:01,655 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-13 18:00:01,663 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-13 21:45:01,348 INFO /home/fch/.local/bin/bench set-config developer_mode 1
+2024-08-13 21:50:41,462 INFO /home/fch/.local/bin/bench --site erp.fleuvecongohotel.com set-maintenance-mode on
+2024-08-13 21:51:41,824 INFO /home/fch/.local/bin/bench --site erp.fleuvecongohotel.com migrate
+2024-08-13 21:54:20,263 INFO /home/fch/.local/bin/bench --site erp.fleuvecongohotel.com set-maintenance-mode off
+2024-08-13 21:59:18,831 INFO /home/fch/.local/bin/bench config set-config maintenance_mode 1
+2024-08-13 21:59:18,847 WARNING /home/fch/.local/bin/bench config set-config maintenance_mode 1 executed with exit code 2
+2024-08-13 22:05:05,621 INFO /home/fch/.local/bin/bench --site erp.fleuvecongohotel.com migrate
+2024-08-13 22:09:03,004 INFO /home/fch/.local/bin/bench --site erp.fleuvecongohotel.com set-maintenance-mode off
+2024-08-13 22:10:13,569 INFO /home/fch/.local/bin/bench set-config -g developer_mode 1
+2024-08-13 22:11:51,217 INFO /usr/local/bin/bench set-config developer_mode 1 --site erp.fleuvecongohotel.com
+2024-08-13 22:12:08,142 INFO /home/fch/.local/bin/bench set-config developer_mode 1 --site erp.fleuvecongohotel.com
+2024-08-13 22:19:26,228 INFO /home/fch/.local/bin/bench set-config -g developer_mode 1
+2024-08-13 22:20:14,668 INFO /home/fch/.local/bin/bench set-config developer_mode 1
+2024-08-14 00:00:01,933 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-14 00:00:01,933 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-14 06:00:02,172 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-14 06:00:02,178 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-14 09:44:25,625 INFO /home/fch/.local/bin/bench set-config developer_mode 1
+2024-08-14 10:13:17,800 INFO /home/fch/.local/bin/bench --site erp.fleuvecongohotel.com migrate
+2024-08-14 11:19:06,478 INFO /home/fch/.local/bin/bench --site erp.fleuvecongohotel.com migrate
+2024-08-14 12:00:01,946 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-14 12:00:01,952 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-14 13:28:38,139 INFO /home/fch/.local/bin/bench set-config developer_mode 1
+2024-08-14 13:29:59,121 INFO /home/fch/.local/bin/bench --site erp.fleuvecongohotel.com migrate
+2024-08-14 14:57:34,926 INFO /home/fch/.local/bin/bench --site erp.fleuvecongohotel.com migrate
+2024-08-14 15:25:50,240 INFO /home/fch/.local/bin/bench --site erp.fleuvecongohotel.com migrate
+2024-08-14 15:45:51,537 INFO /home/fch/.local/bin/bench --site erp.fleuvecongohotel.com migrate
+2024-08-14 15:51:51,633 INFO /home/fch/.local/bin/bench --site erp.fleuvecongohotel.com migrate
+2024-08-14 16:39:42,388 INFO /home/fch/.local/bin/bench --site erp.fleuvecongohotel.com migrate
+2024-08-14 18:00:01,707 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-14 18:00:01,710 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-14 20:29:56,898 INFO /home/fch/.local/bin/bench --site erp.fleuvecongohotel.com migrate
+2024-08-14 20:36:08,141 INFO /home/fch/.local/bin/bench --site erp.fleuvecongohotel.com migrate
+2024-08-14 20:44:48,725 INFO /home/fch/.local/bin/bench --site erp.fleuvecongohotel.com migrate
+2024-08-14 20:52:30,333 INFO /home/fch/.local/bin/bench --site erp.fleuvecongohotel.com migrate
+2024-08-15 00:00:01,806 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-15 00:00:01,808 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-15 06:00:01,480 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-15 06:00:01,484 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-15 12:00:01,474 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-15 12:00:01,481 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-15 12:01:20,197 INFO /home/fch/.local/bin/bench --site erp.fleuvecongohotel.com migrate
+2024-08-15 12:18:42,331 INFO /home/fch/.local/bin/bench set-config developer_mode 1
+2024-08-15 12:38:23,321 INFO /home/fch/.local/bin/bench --site erp.fleuvecongohotel.com migrate
+2024-08-15 12:49:54,336 INFO /home/fch/.local/bin/bench --site erp.fleuvecongohotel.com migrate
+2024-08-15 15:34:18,484 INFO /home/fch/.local/bin/bench --site erp.fleuvecongohotel.com migrate
+2024-08-15 16:42:36,408 INFO /home/fch/.local/bin/bench set-config developer_mode 0
+2024-08-15 18:00:01,990 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-15 18:00:01,997 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-16 00:00:02,135 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-16 00:00:02,138 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-16 06:00:01,341 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-16 06:00:01,347 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-16 12:00:01,699 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-16 12:00:01,699 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-16 18:00:01,834 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-16 18:00:01,841 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-17 00:00:01,986 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-17 00:00:01,988 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-17 06:00:02,016 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-17 06:00:02,017 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-17 12:00:01,523 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-17 12:00:01,524 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-17 18:00:01,900 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-17 18:00:01,907 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-18 00:00:01,584 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-18 00:00:01,586 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-18 06:00:01,923 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-18 06:00:01,931 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-18 12:00:01,698 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-18 12:00:01,704 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-18 18:00:02,142 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-18 18:00:02,149 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-19 00:00:01,600 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-19 00:00:01,605 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-19 06:00:02,025 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-19 06:00:02,030 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-19 12:00:02,018 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-19 12:00:02,024 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-19 16:15:22,059 INFO /home/fch/.local/bin/bench --site erp.fleuvecongohotel.com console
+2024-08-19 17:44:29,067 INFO /home/fch/.local/bin/bench --site erp.fleuvecongohotel.com console
+2024-08-19 18:00:02,133 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-19 18:00:02,140 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-19 18:34:38,720 INFO /usr/local/bin/bench worker --queue default
+2024-08-19 18:34:38,728 INFO /usr/local/bin/bench worker --queue short
+2024-08-19 18:34:38,740 INFO /usr/local/bin/bench schedule
+2024-08-19 18:34:38,747 INFO /usr/local/bin/bench worker --queue long
+2024-08-20 00:00:01,455 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-20 00:00:01,458 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-20 06:00:01,458 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-20 06:00:01,459 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-20 10:31:55,720 INFO /usr/local/bin/bench schedule
+2024-08-20 10:31:55,729 INFO /usr/local/bin/bench worker --queue default
+2024-08-20 10:31:55,732 INFO /usr/local/bin/bench worker --queue short
+2024-08-20 10:31:55,740 INFO /usr/local/bin/bench worker --queue long
+2024-08-20 10:46:42,053 INFO /usr/local/bin/bench schedule
+2024-08-20 10:46:42,055 INFO /usr/local/bin/bench worker --queue default
+2024-08-20 10:46:42,057 INFO /usr/local/bin/bench worker --queue short
+2024-08-20 10:46:42,063 INFO /usr/local/bin/bench worker --queue long
+2024-08-20 11:19:46,608 INFO /usr/local/bin/bench schedule
+2024-08-20 11:19:46,611 INFO /usr/local/bin/bench worker --queue default
+2024-08-20 11:19:46,617 INFO /usr/local/bin/bench worker --queue long
+2024-08-20 11:19:46,619 INFO /usr/local/bin/bench worker --queue short
+2024-08-20 11:22:23,956 INFO /usr/local/bin/bench schedule
+2024-08-20 11:22:23,964 INFO /usr/local/bin/bench worker --queue default
+2024-08-20 11:22:23,967 INFO /usr/local/bin/bench worker --queue long
+2024-08-20 11:22:23,967 INFO /usr/local/bin/bench worker --queue short
+2024-08-20 11:24:18,391 INFO /usr/local/bin/bench schedule
+2024-08-20 11:24:18,395 INFO /usr/local/bin/bench worker --queue default
+2024-08-20 11:24:18,397 INFO /usr/local/bin/bench worker --queue short
+2024-08-20 11:24:18,448 INFO /usr/local/bin/bench worker --queue long
+2024-08-20 11:36:57,304 INFO /usr/local/bin/bench worker --queue default
+2024-08-20 11:36:57,305 INFO /usr/local/bin/bench schedule
+2024-08-20 11:36:57,308 INFO /usr/local/bin/bench worker --queue short
+2024-08-20 11:36:57,313 INFO /usr/local/bin/bench worker --queue long
+2024-08-20 11:40:06,237 INFO /usr/local/bin/bench worker --queue default
+2024-08-20 11:40:06,238 INFO /usr/local/bin/bench schedule
+2024-08-20 11:40:06,248 INFO /usr/local/bin/bench worker --queue long
+2024-08-20 11:40:06,253 INFO /usr/local/bin/bench worker --queue short
+2024-08-20 11:48:38,365 INFO /usr/local/bin/bench worker --queue default
+2024-08-20 11:48:38,368 INFO /usr/local/bin/bench schedule
+2024-08-20 11:48:38,373 INFO /usr/local/bin/bench worker --queue long
+2024-08-20 11:48:38,373 INFO /usr/local/bin/bench worker --queue short
+2024-08-20 11:57:07,682 INFO /usr/local/bin/bench schedule
+2024-08-20 11:57:07,684 INFO /usr/local/bin/bench worker --queue short
+2024-08-20 11:57:07,689 INFO /usr/local/bin/bench worker --queue default
+2024-08-20 11:57:07,696 INFO /usr/local/bin/bench worker --queue long
+2024-08-20 11:59:58,321 INFO /usr/local/bin/bench schedule
+2024-08-20 11:59:58,337 INFO /usr/local/bin/bench worker --queue default
+2024-08-20 11:59:58,345 INFO /usr/local/bin/bench worker --queue long
+2024-08-20 11:59:58,347 INFO /usr/local/bin/bench worker --queue short
+2024-08-20 12:00:02,185 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-20 12:00:02,187 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-20 12:13:51,871 INFO /usr/local/bin/bench schedule
+2024-08-20 12:13:51,876 INFO /usr/local/bin/bench worker --queue short
+2024-08-20 12:13:51,877 INFO /usr/local/bin/bench worker --queue default
+2024-08-20 12:13:51,878 INFO /usr/local/bin/bench worker --queue long
+2024-08-20 12:16:23,553 INFO /usr/local/bin/bench worker --queue default
+2024-08-20 12:16:23,553 INFO /usr/local/bin/bench schedule
+2024-08-20 12:16:23,558 INFO /usr/local/bin/bench worker --queue long
+2024-08-20 12:16:23,561 INFO /usr/local/bin/bench worker --queue short
+2024-08-20 12:17:32,211 INFO /usr/local/bin/bench worker --queue short
+2024-08-20 12:17:32,213 INFO /usr/local/bin/bench worker --queue default
+2024-08-20 12:17:32,216 INFO /usr/local/bin/bench schedule
+2024-08-20 12:17:32,227 INFO /usr/local/bin/bench worker --queue long
+2024-08-20 12:19:58,243 INFO /usr/local/bin/bench worker --queue short
+2024-08-20 12:19:58,244 INFO /usr/local/bin/bench schedule
+2024-08-20 12:19:58,246 INFO /usr/local/bin/bench worker --queue default
+2024-08-20 12:19:58,256 INFO /usr/local/bin/bench worker --queue long
+2024-08-20 12:56:11,432 INFO /usr/local/bin/bench worker --queue default
+2024-08-20 12:56:11,440 INFO /usr/local/bin/bench schedule
+2024-08-20 12:56:11,442 INFO /usr/local/bin/bench worker --queue short
+2024-08-20 12:56:11,443 INFO /usr/local/bin/bench worker --queue long
+2024-08-20 12:59:33,312 INFO /usr/local/bin/bench schedule
+2024-08-20 12:59:33,319 INFO /usr/local/bin/bench worker --queue short
+2024-08-20 12:59:33,321 INFO /usr/local/bin/bench worker --queue default
+2024-08-20 12:59:33,325 INFO /usr/local/bin/bench worker --queue long
+2024-08-20 13:09:03,486 INFO /usr/local/bin/bench schedule
+2024-08-20 13:09:03,487 INFO /usr/local/bin/bench worker --queue default
+2024-08-20 13:09:03,496 INFO /usr/local/bin/bench worker --queue long
+2024-08-20 13:09:03,500 INFO /usr/local/bin/bench worker --queue short
+2024-08-20 13:12:16,043 INFO /usr/local/bin/bench worker --queue default
+2024-08-20 13:12:16,044 INFO /usr/local/bin/bench schedule
+2024-08-20 13:12:16,051 INFO /usr/local/bin/bench worker --queue short
+2024-08-20 13:12:16,054 INFO /usr/local/bin/bench worker --queue long
+2024-08-20 18:00:02,145 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-20 18:00:02,146 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-21 00:00:02,112 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-21 00:00:02,115 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-21 06:00:01,705 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-21 06:00:01,709 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-21 12:00:02,148 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-21 12:00:02,149 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-21 18:00:02,095 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-21 18:00:02,096 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-22 00:00:01,653 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-22 00:00:01,653 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-22 06:00:01,419 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-22 06:00:01,424 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-22 12:00:01,969 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-22 12:00:01,975 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-22 15:38:55,846 INFO /home/fch/.local/bin/bench --site erp.fleuvecongohotel.com migrate
+2024-08-22 15:41:53,988 INFO /usr/local/bin/bench schedule
+2024-08-22 15:41:53,998 INFO /usr/local/bin/bench worker --queue default
+2024-08-22 15:41:54,005 INFO /usr/local/bin/bench worker --queue short
+2024-08-22 15:41:54,009 INFO /usr/local/bin/bench worker --queue long
+2024-08-22 15:48:39,655 INFO /home/fch/.local/bin/bench --site erp.fleuvecongohotel.com migrate
+2024-08-22 15:52:03,475 INFO /usr/local/bin/bench worker --queue default
+2024-08-22 15:52:03,477 INFO /usr/local/bin/bench schedule
+2024-08-22 15:52:03,478 INFO /usr/local/bin/bench worker --queue short
+2024-08-22 15:52:03,479 INFO /usr/local/bin/bench worker --queue long
+2024-08-22 16:03:35,504 INFO /usr/local/bin/bench worker --queue long
+2024-08-22 16:03:35,504 INFO /usr/local/bin/bench schedule
+2024-08-22 16:03:35,504 INFO /usr/local/bin/bench worker --queue default
+2024-08-22 16:03:35,504 INFO /usr/local/bin/bench worker --queue short
+2024-08-22 18:00:01,846 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-22 18:00:01,864 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-23 00:00:03,728 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-23 00:00:03,733 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-23 06:00:01,841 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-23 06:00:01,844 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-23 12:00:02,112 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-23 12:00:02,113 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-23 18:00:01,547 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-23 18:00:01,549 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-24 00:00:01,662 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-24 00:00:01,664 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-24 06:00:01,575 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-24 06:00:01,581 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-24 12:00:01,415 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-24 12:00:01,418 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-24 18:00:01,397 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-24 18:00:01,399 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-25 00:00:01,587 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-25 00:00:01,588 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-25 06:00:01,426 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-25 06:00:01,431 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-25 12:00:01,826 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-25 12:00:01,832 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-25 18:00:01,982 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-25 18:00:01,983 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-26 00:00:02,139 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-26 00:00:02,142 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-26 06:00:01,513 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-26 06:00:01,515 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-26 12:00:01,768 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-26 12:00:01,770 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-26 18:00:01,300 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-26 18:00:01,307 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-27 00:00:01,282 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-27 00:00:01,288 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-27 06:00:01,438 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-27 06:00:01,443 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-27 12:00:01,714 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-27 12:00:01,722 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-27 18:00:02,081 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-27 18:00:02,081 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-28 00:00:01,344 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-28 00:00:01,348 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-28 06:00:01,922 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-28 06:00:01,929 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-28 12:00:01,616 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-28 12:00:01,620 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-28 18:00:02,060 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-28 18:00:02,067 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-29 00:00:01,343 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-29 00:00:01,345 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-29 06:00:01,557 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-29 06:00:01,562 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-29 12:00:01,375 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-29 12:00:01,377 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-29 18:00:02,009 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-29 18:00:02,017 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-30 00:00:01,395 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-30 00:00:01,400 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-30 06:00:01,631 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-30 06:00:01,632 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-30 12:00:01,896 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-30 12:00:01,900 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-30 18:00:01,287 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-30 18:00:01,293 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-31 00:00:01,899 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-31 00:00:01,900 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-31 06:00:01,683 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-31 06:00:01,686 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-31 12:00:01,944 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-31 12:00:01,949 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-08-31 18:00:02,032 INFO /usr/local/bin/bench --verbose --site all backup
+2024-08-31 18:00:02,034 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-01 00:00:01,827 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-01 00:00:01,831 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-01 06:00:01,546 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-01 06:00:01,549 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-01 12:00:01,810 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-01 12:00:01,815 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-01 18:00:01,837 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-01 18:00:01,841 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-02 00:00:01,669 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-02 00:00:01,671 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-02 06:00:01,577 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-02 06:00:01,580 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-02 12:00:01,675 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-02 12:00:01,682 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-02 18:00:01,540 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-02 18:00:01,548 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-03 00:00:01,350 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-03 00:00:01,352 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-03 06:00:01,491 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-03 06:00:01,493 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-03 12:00:01,794 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-03 12:00:01,796 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-03 18:00:01,848 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-03 18:00:01,852 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-04 00:00:01,896 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-04 00:00:01,898 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-04 06:00:01,645 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-04 06:00:01,646 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-04 12:00:02,006 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-04 12:00:02,012 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-04 12:01:58,578 INFO /home/fch/.local/bin/bench --site erp.fleuvecongohotel.com migrate
+2024-09-04 12:15:28,082 INFO /home/fch/.local/bin/bench --site erp.fleuvecongohotel.com migrate
+2024-09-04 12:22:50,985 INFO /home/fch/.local/bin/bench --site erp.fleuvecongohotel.com migrate
+2024-09-04 12:33:17,469 INFO /home/fch/.local/bin/bench --site erp.fleuvecongohotel.com migrate
+2024-09-04 14:55:22,777 INFO /home/fch/.local/bin/bench --site erp.fleuvecongohotel.com migrate
+2024-09-04 15:02:38,936 INFO /usr/local/bin/bench schedule
+2024-09-04 15:02:38,937 INFO /usr/local/bin/bench worker --queue default
+2024-09-04 15:02:38,945 INFO /usr/local/bin/bench worker --queue long
+2024-09-04 15:02:38,946 INFO /usr/local/bin/bench worker --queue short
+2024-09-04 15:02:50,019 INFO /home/fch/.local/bin/bench --site erp.fleuvecongohotel.com migrate
+2024-09-04 15:12:02,364 INFO /home/fch/.local/bin/bench --site erp.fleuvecongohotel.com migrate
+2024-09-04 15:16:55,010 INFO /home/fch/.local/bin/bench --site erp.fleuvecongohotel.com migrate
+2024-09-04 15:23:37,177 INFO /usr/local/bin/bench schedule
+2024-09-04 15:23:37,178 INFO /usr/local/bin/bench worker --queue default
+2024-09-04 15:23:37,183 INFO /usr/local/bin/bench worker --queue short
+2024-09-04 15:23:37,185 INFO /usr/local/bin/bench worker --queue long
+2024-09-04 15:23:42,249 INFO /home/fch/.local/bin/bench --site erp.fleuvecongohotel.com migrate
+2024-09-04 18:00:01,781 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-04 18:00:01,787 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-05 00:00:02,137 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-05 00:00:02,143 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-05 06:00:01,945 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-05 06:00:01,946 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-05 12:00:01,984 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-05 12:00:01,987 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-05 18:00:01,873 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-05 18:00:01,873 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-06 00:00:02,000 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-06 00:00:02,001 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-06 06:00:01,987 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-06 06:00:01,993 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-06 12:00:01,620 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-06 12:00:01,620 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-06 18:00:01,607 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-06 18:00:01,611 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-07 00:00:01,354 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-07 00:00:01,357 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-07 06:00:01,592 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-07 06:00:01,595 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-07 12:00:01,586 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-07 12:00:01,591 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-07 18:00:01,311 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-07 18:00:01,311 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-08 00:00:01,343 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-08 00:00:01,344 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-08 06:00:01,270 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-08 06:00:01,275 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-08 12:00:01,981 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-08 12:00:01,985 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-08 18:00:01,391 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-08 18:00:01,400 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-09 00:00:01,611 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-09 00:00:01,612 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-09 06:00:01,485 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-09 06:00:01,492 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-09 12:00:01,445 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-09 12:00:01,447 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-09 18:00:01,732 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-09 18:00:01,738 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-10 00:00:01,569 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-10 00:00:01,572 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-10 06:00:02,143 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-10 06:00:02,149 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-10 12:00:01,752 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-10 12:00:01,754 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-10 18:00:02,062 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-10 18:00:02,068 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-11 00:00:01,365 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-11 00:00:01,369 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-11 06:00:01,755 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-11 06:00:01,757 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-11 12:00:01,954 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-11 12:00:01,954 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-11 18:00:01,259 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-11 18:00:01,265 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-12 00:00:01,898 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-12 00:00:01,899 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-12 06:00:01,630 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-12 06:00:01,636 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-12 12:00:01,831 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-12 12:00:01,833 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-12 18:00:01,395 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-12 18:00:01,397 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-13 00:00:02,061 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-13 00:00:02,066 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-13 06:00:01,924 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-13 06:00:01,930 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-13 12:00:01,746 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-13 12:00:01,752 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-13 18:00:01,358 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-13 18:00:01,360 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-14 00:00:01,786 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-14 00:00:01,789 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-14 06:00:01,563 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-14 06:00:01,571 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-14 12:00:01,320 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-14 12:00:01,328 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-14 18:00:01,541 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-14 18:00:01,546 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-15 00:00:01,398 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-15 00:00:01,399 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-15 06:00:01,705 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-15 06:00:01,712 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-15 12:00:01,846 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-15 12:00:01,851 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-15 18:00:01,824 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-15 18:00:01,832 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-16 00:00:01,662 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-16 00:00:01,662 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-16 06:00:01,470 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-16 06:00:01,474 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-16 12:00:02,086 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-16 12:00:02,086 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-16 18:00:01,237 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-16 18:00:01,244 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-17 00:00:01,502 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-17 00:00:01,504 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-17 06:00:01,558 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-17 06:00:01,563 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-17 12:00:01,307 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-17 12:00:01,314 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-17 18:00:01,542 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-17 18:00:01,542 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-18 00:00:01,412 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-18 00:00:01,415 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-18 06:00:02,115 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-18 06:00:02,121 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-18 12:00:01,579 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-18 12:00:01,579 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-18 18:00:01,771 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-18 18:00:01,776 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-19 00:00:01,574 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-19 00:00:01,576 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-19 06:00:01,422 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-19 06:00:01,428 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-19 12:00:01,808 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-19 12:00:01,809 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-19 18:00:01,951 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-19 18:00:01,951 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-20 00:00:02,164 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-20 00:00:02,166 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-20 06:00:01,613 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-20 06:00:01,615 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-20 12:00:01,823 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-20 12:00:01,828 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-20 18:00:01,661 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-20 18:00:01,663 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-21 00:00:01,971 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-21 00:00:01,972 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-21 06:00:01,970 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-21 06:00:01,976 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-21 12:00:01,941 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-21 12:00:01,944 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-21 18:00:01,914 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-21 18:00:01,917 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-22 00:00:02,198 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-22 00:00:02,201 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-22 06:00:01,477 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-22 06:00:01,482 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-22 12:00:01,363 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-22 12:00:01,364 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-22 18:00:02,146 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-22 18:00:02,147 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-23 00:00:01,273 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-23 00:00:01,275 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-23 06:00:01,864 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-23 06:00:01,864 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-23 12:00:01,284 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-23 12:00:01,289 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-23 18:00:01,611 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-23 18:00:01,617 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-24 00:00:02,077 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-24 00:00:02,077 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-24 06:00:02,065 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-24 06:00:02,067 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-24 12:00:01,711 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-24 12:00:01,711 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-24 18:00:01,704 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-24 18:00:01,713 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-25 00:00:02,198 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-25 00:00:02,199 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-25 06:00:01,689 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-25 06:00:01,694 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-25 12:00:01,229 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-25 12:00:01,232 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-25 18:00:01,608 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-25 18:00:01,617 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-26 00:00:01,983 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-26 00:00:01,987 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-26 06:00:02,117 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-26 06:00:02,123 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-26 12:00:01,488 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-26 12:00:01,488 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-26 18:00:02,043 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-26 18:00:02,044 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-27 00:00:01,503 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-27 00:00:01,506 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-27 06:00:01,483 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-27 06:00:01,491 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-27 12:00:02,151 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-27 12:00:02,154 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-27 18:00:01,916 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-27 18:00:01,917 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-28 00:00:02,149 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-28 00:00:02,151 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-28 06:00:02,018 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-28 06:00:02,021 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-28 12:00:01,314 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-28 12:00:01,319 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-28 18:00:02,014 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-28 18:00:02,014 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-29 00:00:01,263 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-29 00:00:01,265 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-29 06:00:01,972 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-29 06:00:01,977 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-29 12:00:01,224 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-29 12:00:01,230 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-29 18:00:01,720 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-29 18:00:01,728 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-30 00:00:01,456 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-30 00:00:01,460 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-30 06:00:01,835 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-30 06:00:01,844 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-30 12:00:01,766 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-30 12:00:01,772 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-30 18:00:01,320 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-09-30 18:00:01,327 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-01 00:00:01,753 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-01 00:00:01,753 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-01 06:00:01,909 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-01 06:00:01,912 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-01 12:00:01,535 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-01 12:00:01,538 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-01 18:00:01,979 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-01 18:00:01,984 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-02 00:00:02,111 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-02 00:00:02,114 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-02 06:00:01,861 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-02 06:00:01,864 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-02 12:00:01,662 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-02 12:00:01,667 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-02 18:00:01,804 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-02 18:00:01,807 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-03 00:00:01,588 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-03 00:00:01,588 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-03 06:00:01,231 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-03 06:00:01,238 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-03 12:00:01,328 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-03 12:00:01,334 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-03 18:00:01,808 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-03 18:00:01,811 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-04 00:00:02,060 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-04 00:00:02,064 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-04 06:00:02,168 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-04 06:00:02,174 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-04 12:00:01,795 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-04 12:00:01,797 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-04 18:00:01,877 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-04 18:00:01,877 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-05 00:00:01,572 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-05 00:00:01,573 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-05 06:00:01,460 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-05 06:00:01,463 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-05 12:00:01,551 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-05 12:00:01,555 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-05 18:00:02,087 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-05 18:00:02,090 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-06 00:00:01,753 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-06 00:00:01,755 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-06 06:00:01,942 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-06 06:00:01,945 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-06 12:00:01,760 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-06 12:00:01,766 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-06 18:00:01,931 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-06 18:00:01,934 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-07 00:00:01,538 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-07 00:00:01,541 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-07 06:00:01,981 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-07 06:00:01,984 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-07 12:00:01,469 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-07 12:00:01,471 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-07 18:00:01,843 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-07 18:00:01,846 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-08 00:00:01,239 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-08 00:00:01,240 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-08 06:00:01,495 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-08 06:00:01,499 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-08 12:00:01,822 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-08 12:00:01,825 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-08 18:00:01,428 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-08 18:00:01,430 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-09 00:00:01,665 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-09 00:00:01,666 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-09 06:00:01,922 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-09 06:00:01,927 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-09 12:00:01,985 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-09 12:00:01,993 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-09 18:00:01,942 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-09 18:00:01,948 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-10 00:00:01,361 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-10 00:00:01,362 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-10 06:00:01,953 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-10 06:00:01,962 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-10 12:00:02,028 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-10 12:00:02,029 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-10 18:00:02,028 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-10 18:00:02,031 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-11 00:00:01,293 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-11 00:00:01,297 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-11 06:00:01,565 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-11 06:00:01,570 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-11 12:00:01,776 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-11 12:00:01,781 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-11 18:00:01,750 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-11 18:00:01,752 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-12 00:00:02,018 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-12 00:00:02,018 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-12 06:00:01,920 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-12 06:00:01,923 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-12 12:00:01,792 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-12 12:00:01,796 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-12 18:00:02,132 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-12 18:00:02,133 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-13 00:00:02,013 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-13 00:00:02,015 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-13 06:00:01,291 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-13 06:00:01,297 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-13 12:00:01,515 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-13 12:00:01,517 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-13 18:00:01,754 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-13 18:00:01,758 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-14 00:00:01,517 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-14 00:00:01,518 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-14 06:00:01,694 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-14 06:00:01,699 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-14 12:00:01,866 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-14 12:00:01,870 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-14 18:00:01,852 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-14 18:00:01,854 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-15 00:00:01,429 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-15 00:00:01,430 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-15 06:00:01,717 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-15 06:00:01,722 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-15 12:00:02,111 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-15 12:00:02,113 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-15 18:00:01,352 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-15 18:00:01,357 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-16 00:00:01,756 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-16 00:00:01,760 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-16 06:00:01,607 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-16 06:00:01,608 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-16 12:00:01,359 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-16 12:00:01,360 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-16 18:00:02,141 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-16 18:00:02,145 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-17 00:00:01,956 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-17 00:00:01,958 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-17 06:00:01,304 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-17 06:00:01,306 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-17 12:00:01,255 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-17 12:00:01,255 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-17 18:00:01,467 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-17 18:00:01,469 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-18 00:00:01,239 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-18 00:00:01,239 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-18 06:00:01,726 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-18 06:00:01,737 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-18 12:00:01,325 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-18 12:00:01,328 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-18 18:00:01,927 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-18 18:00:01,927 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-19 00:00:01,236 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-19 00:00:01,238 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-19 06:00:01,495 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-19 06:00:01,501 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-19 12:00:01,254 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-19 12:00:01,259 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-19 18:00:01,523 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-19 18:00:01,526 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-20 00:00:01,630 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-20 00:00:01,632 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-20 06:00:01,217 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-20 06:00:01,222 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-20 12:00:01,843 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-20 12:00:01,845 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-20 18:00:01,510 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-20 18:00:01,514 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-21 00:00:02,109 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-21 00:00:02,110 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-21 06:00:01,305 INFO /home/fch/.local/bin/bench --verbose --site all backup
+2024-10-21 06:00:01,307 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-21 12:00:01,767 INFO /usr/local/bin/bench --verbose --site all backup
+2024-10-21 12:00:01,772 INFO /home/fch/.local/bin/bench --verbose --site all backup

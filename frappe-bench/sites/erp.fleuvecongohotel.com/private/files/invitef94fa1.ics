@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REPLY
+BEGIN:VEVENT
+DTSTART:20231010T093000Z
+DTEND:20231010T120000Z
+DTSTAMP:20231010T145204Z
+ORGANIZER;CN=tshanyserge@gmail.com:mailto:tshanyserge@gmail.com
+UID:5mtsdg3fg54l98fot170pk1kvr@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=danyka
+ sthemba@gmail.com;X-NUM-GUESTS=0:mailto:danykasthemba@gmail.com
+X-GOOGLE-CONFERENCE:https://meet.google.com/ftq-eqgu-tby
+CREATED:20231010T082233Z
+DESCRIPTION:Apres avoir reçu le fichier mise à jour :\n* Calcul des bulleti
+ ns selon le traitement microcom\n* Calcul du logement à 30% ou en dessous d
+ e 30%\n* Calcul du transport avec la nouvelles grilles de transport\n\n-::~
+ :~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ ::~:~::-\nJoin with Google Meet: https://meet.google.com/ftq-eqgu-tby\n\nLe
+ arn more about Meet at: https://support.google.com/a/users/answer/9282720\n
+ \nPlease do not edit this section.\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20231010T145204Z
+LOCATION:MICROCOM
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Simulation paie MICROCOM
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR
